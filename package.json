@@ -10,7 +10,11 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scripts": {
+      "postinstall": "if [ $WEB_ENV ]; then npm run postinstall-web; elif [ $API_ENV ]; then npm run postinstall-api; else echo no environment detected, please set WEB_ENV or API_ENV; fi",
+      "postinstall-web": "cd packages/web && npm install && npm run build",
+      "postinstall-api": "cd packages/api && npm install"
+    }
   },
   "author": "Andressa Noaves <isa.desenvolvimento@gmail.com>",
   "license": "ISC",
