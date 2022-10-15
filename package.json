@@ -10,11 +10,9 @@
     ]
   },
   "scripts": {
-    "scripts": {
-      "postinstall": "if [ $WEB_ENV ]; then npm run postinstall-web; fi; if [ $API_ENV ]; then npm run postinstall-api; fi",
-      "postinstall-web": "cd packages/web && npm install && npm run build && node server.js",
-      "postinstall-api": "cd packages/api && npm install && node build/server.js"
-    }
+    "postinstall": "if [ $WEB_ENV ]; then npm run postinstall-web; fi; if [ $API_ENV ]; then npm run postinstall-api; fi",
+    "postinstall-web": "cd packages/web && npm install",
+    "postinstall-api": "cd packages/api && npm install"
   },
   "author": "Andressa Noaves <isa.desenvolvimento@gmail.com>",
   "license": "ISC",
