@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { createContext, useContext } from 'react';
 import { useAuth } from '../contexts/auth';
 
