@@ -12,7 +12,7 @@
   "scripts": {
     "postinstall": "npm run postinstall-web && npm run postinstall-api",
     "postinstall-web": "cd packages/web && npm install",
-    "postinstall-api": "cd packages/api && npm install && sh deploy-web.sh"
+    "postinstall-api": "cd packages/api && npm install && npm num build &&  sh deploy-web.sh"
   },
   "author": "Andressa Noaves <isa.desenvolvimento@gmail.com>",
   "license": "ISC",
