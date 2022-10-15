@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd packages/api && node packages/api/build/server.js
+node packages/api/build/server.js
