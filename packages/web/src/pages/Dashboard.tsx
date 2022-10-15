@@ -110,7 +110,7 @@ export default function Dashboard() {
 
           {data && data.datasets[0].data.length ? (
             <div className="w-[60%] grid m-auto text-left">
-              <Doughnut  data={data} />
+              <Doughnut data={data} />
             </div>
           ) : (
             <NotFound />

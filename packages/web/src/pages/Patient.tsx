@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import {
-  dropDown,
-  filter,
-  getList,
-  update
-} from '../server';
+import { dropDown, filter, getList, update } from '../server';
 import List from '../components/List';
 import { ItemList } from '../components/ItemList';
 
@@ -171,8 +166,10 @@ export default function Patient() {
           />
         </FormAction>
       </div>
-    ): <></>
-  }
+    ) : (
+      <></>
+    );
+  };
 
   const formtDate = (value: PacientsProps) => {
     const data = {
